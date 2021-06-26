@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const farmers = () => {
+export const Farmers = () => {
     return (
         <div>
             

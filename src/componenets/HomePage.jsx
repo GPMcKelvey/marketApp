@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Markets = () => {
+export const HomePage = () => {
     return (
         <div>
             

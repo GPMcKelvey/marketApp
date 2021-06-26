@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const forums = () => {
+export const Forums = () => {
     return (
         <div>
             
