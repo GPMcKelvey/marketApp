@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import FarmersHeader from './FarmersHeader';
-import Farms from './Farms';
 import AddFarm from './AddFarm';
+import FarmCarousel from './FarmCarousel';
+import Farms from './Farms'
 
 
 export const MainFarmers = () => {
@@ -40,9 +41,7 @@ export const MainFarmers = () => {
                 onAdd={() => setShowAddFarm(!showAddFarm)}
                 showAdd={showAddFarm} />
                 {showAddFarm && <AddFarm onAdd={addFarm} />}
-                {farms.length > 0 ? <Farms 
-                farms={farms} 
-            /> : ('No Farms to Show')}
+                <FarmCarousel />
         </div>
     )
 }
