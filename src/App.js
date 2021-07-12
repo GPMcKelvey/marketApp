@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './components/HomePage'
 import Cards from './components/Cards'
 
+
 import About from './components/about/about'
 import Farmers from './components/farmers/farmers'
 import Forums from './components/forums/forums'
@@ -37,6 +38,7 @@ function App() {
       
 
     
+>>>>>>> a6d263e44c2f13ceebddb184ef75434202c64c99
   );
 } 
 
