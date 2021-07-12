@@ -8,6 +8,7 @@ import {
     NavBtnLink
  } from './NavbarElements';
  import logo from "./logo.png"
+ import Auth from '../auth/Auth'
 
 const Navbar = () => {
     return (
@@ -35,12 +36,7 @@ const Navbar = () => {
                     {/* <NavBtnLink to='/signin'>Sign In</NavBtnLink> */}
 
                 </NavMenu>
-                <NavBtn>
-                    <NavBtnLink to='/Login'>Login</NavBtnLink>
-                </NavBtn>
-                <NavBtn>
-                    <NavBtnLink to='Signup'>Register</NavBtnLink>
-                </NavBtn> 
+                <Auth />
             </Nav>
         </>
     )
