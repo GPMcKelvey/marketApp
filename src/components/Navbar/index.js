@@ -15,17 +15,11 @@ const Navbar = () => {
                 <NavLink to="/">
                     <h1>Logo</h1>
 
-                    {/* <img src={require('../../images/corn.jpg')} 
-                    alt="logo" />  */}
+                    <img src={require('/Users/Grace/Documents/TechPoint/marketApp/src/components/Navbar/images/GTlogo.png')} 
+                    alt="logo" /> 
                 </NavLink>
                 <Bars /> 
                 <NavMenu> 
-                    <NavLink to="/about" activeStyle>
-                        About 
-                    </NavLink>
-                    <NavLink to="/register" activeStyle>
-                        Register 
-                    </NavLink>
                     <NavLink to="/resources" activeStyle>
                         Resources 
                     </NavLink>

@@ -3,7 +3,10 @@ import { NavLink as Link} from 'react-router-dom'
 import {FaBars} from 'react-icons/fa'
 
 export const Nav = styled.nav`
-    background: #000; 
+    // background: #000; 
+
+    background: darkgreen; 
+
     height: 80px; 
     display: flex; 
     justify-content: space-between; 
@@ -21,7 +24,7 @@ export const NavLink = styled(Link)`
     cursor: pointer; 
 
     &.active { 
-        color: #15cdfc; 
+        color: yellow; 
     }
 `
 export const Bars = styled(FaBars)`
