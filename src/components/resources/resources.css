@@ -1,0 +1,68 @@
+body {
+    background-color: whitesmoke;
+    color: green;
+    padding: 40px;
+    font-family: Arial;
+    /* text-align: center; */
+    text-align: left;
+    /* padding-left: -10rem; */
+    line-height: 30px;
+    /* margin-left: 8rem; 4px */
+
+  }
+
+.titles {
+    font-family: Arial;
+    color: darkgreen;
+    font-size: 40px;
+    text-align: left;
+    line-height: 60px;
+    text-align: justify;
+}
+
+
+.fruit { 
+    font-family: Arial;
+    color: green;
+    font-size: 25px;
+    padding: 20px;
+    line-height: 10px;
+    text-align: justify;
+    margin-left: 4rem;
+
+}
+
+.subTitles { 
+    font-family: Arial;
+    color: green;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 10px;
+    text-align: justify;
+    margin-left: 6rem;
+
+}
+
+.recipes { 
+    font-family: Arial;
+    color: black;
+    font-size: 16px;
+    padding: 20px;
+    line-height: 10px;
+    text-align: justify;
+    margin-left: 8rem;
+
+}
+
+.oldFruits { 
+    font-family: Arial;
+    color: black;
+    font-size: 13px;
+    padding: 20px;
+    line-height: 10px;
+    text-align: justify;
+    margin-left: 4rem;
+    font-weight: bold;
+    font-style: oblique;
+
+}
