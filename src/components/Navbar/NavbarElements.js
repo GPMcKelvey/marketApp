@@ -2,9 +2,10 @@ import styled from 'styled-components'
 import { NavLink as Link} from 'react-router-dom'
 import {FaBars} from 'react-icons/fa'
 
+
 export const Nav = styled.nav`
-    background: #000; 
-    height: 80px; 
+    background: #08944e; 
+    height: 125px; 
     display: flex; 
     justify-content: space-between; 
     padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -45,7 +46,7 @@ export const NavMenu = styled.div`
     // margin-right: -24px; 
     
     /* 2nd nav*/
-    margin-right: 24px; 
+    margin-right: 200px; 
 
     @media screen and (max-width: 768px) { 
         display: none; 
@@ -55,7 +56,8 @@ export const NavMenu = styled.div`
 export const NavBtn = styled.nav`
     display: flex; 
     align-items: center;
-    margin-right: 24px; 
+    margin-right: 32px; 
+  
 
     @media screen and (max-width: 768px){ 
         display: none; 
@@ -63,9 +65,9 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(Link)`
-    border-radius: 4px; 
+    border-radius: 6px; 
     background: #256ce1; 
-    padding: 10px 22px; 
+    padding: 10px 32px; 
     
     color: #fff; 
     border: none; 
@@ -73,6 +75,7 @@ export const NavBtnLink = styled(Link)`
     cursor: pointer; 
     transition: all  0.2s ease-in-out; 
     text-decoration: none; 
+    width: 10%
 
     // 2nd Nav
     margin-left: 24px;
