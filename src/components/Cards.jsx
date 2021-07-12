@@ -2,11 +2,10 @@ import React, {Component} from "react"
 import Home from "./HomePage";
 // import CarouselCotainer from "./CarouselContainer";
 
-import corn from "../images/farmfest.jpeg"
+import corn from '../images/farmfest.jpeg'
 import farm from "../images/farming1.jpeg"
 import farm2 from "../images/farming3.jpeg"
 
-import Carousel from "./Carousel"
 import "./Slider.css";
 import ImageSlider from "./ImageSlider";
 import {SliderData} from "./SliderData";
