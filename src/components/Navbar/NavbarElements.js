@@ -22,7 +22,7 @@ export const NavLink = styled(Link)`
     cursor: pointer; 
 
     &.active { 
-        color: #15cdfc; 
+        color: yellow; 
     }
 `
 export const Bars = styled(FaBars)`

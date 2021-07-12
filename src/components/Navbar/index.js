@@ -14,19 +14,12 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavLink to="/">
-
                     <img src={logo}
                     height="140" width="140"
                     alt="logo" />  
                 </NavLink>
                 <Bars /> 
                 <NavMenu> 
-                    <NavLink to="/about" activeStyle>
-                        About 
-                    </NavLink>
-                    <NavLink to="/register" activeStyle>
-                        Register 
-                    </NavLink>
                     <NavLink to="/resources" activeStyle>
                         Resources 
                     </NavLink>
