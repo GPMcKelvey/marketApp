@@ -1,20 +1,19 @@
 import React, {Component} from 'react';
 import './AuthStyle.css';
-import APIURL from '../../helpers/environment';
-import {IUser} from '../Interfaces';
+// import APIURL from '../../helpers/environment';
 
 import {Dialog, Button, withStyles, Theme, Box} from '@material-ui/core';
 import {purple} from '@material-ui/core/colors';
 
-const ColorButton = withStyles((theme: Theme) => ({
-    root: {
-      color: theme.palette.getContrastText(purple[300]),
-      backgroundColor: purple[300],
-      '&:hover': {
-        backgroundColor: purple[400],
-      },
-    },
-  }))(Button);
+// const ColorButton = withStyles((Theme) => ({
+//     root: {
+//       color: theme.palette.getContrastText(purple[300]),
+//       backgroundColor: purple[300],
+//       '&:hover': {
+//         backgroundColor: purple[400],
+//       },
+//     },
+//   }))(Button);
 
 
 export default class Login extends Component {
@@ -29,23 +28,23 @@ export default class Login extends Component {
 
     
     handleSubmit = (event) => {
-        event.preventDefault();
-        fetch(`${APIURL}/users/login`, {
-             method: 'POST',
-             body: JSON.stringify({
-                 user:{
-                     username: this.state.username, 
-                     password: this.state.password 
-                    }}),
-             headers: new Headers({
-                  'Content-Type': 'application/json'
-             })
-         })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            this.props.updateToken(data);
-        })
+        // event.preventDefault();
+        // fetch(`${APIURL}/users/login`, {
+        //      method: 'POST',
+        //      body: JSON.stringify({
+        //          user:{
+        //              username: this.state.username, 
+        //              password: this.state.password 
+        //             }}),
+        //      headers: new Headers({
+        //           'Content-Type': 'application/json'
+        //      })
+        //  })
+        // .then(response => response.json())
+        // .then(data => {
+        //     console.log(data);
+        //     this.props.updateToken(data);
+        // })
         this.props.exitHandler();
     }
 
@@ -77,10 +76,10 @@ export default class Login extends Component {
                                 <br />
                                 <Box display='flex'>
                                 <Box m={1} p={1}>
-                                <ColorButton className='form-input-btn' onClick={this.handleSubmit}>Submit</ColorButton>
+                                <Button className='form-input-btn' onClick={this.handleSubmit}>Submit</Button>
                                 </Box>
                                 <Box m={1} p={1}>
-                                <ColorButton className= 'form-input-btn' onClick={this.props.exitHandler}>Exit</ColorButton>
+                                <Button className= 'form-input-btn' onClick={this.props.exitHandler}>Exit</Button>
                                 </Box>
                                 </Box>
                             </form>

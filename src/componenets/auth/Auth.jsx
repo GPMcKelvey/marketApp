@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
-import {IUser} from '../Interfaces';
+
 
 import { Button, withStyles, Theme, Box, AppBar } from '@material-ui/core';
 import { purple } from '@material-ui/core/colors';
 
 import Login from './Login';
 import Signup from './Signup';
-import dailyPlanner from '../assets/dailyPlanner.png';
 
-const ColorButton = withStyles((theme: Theme) => ({
-    root: {
-      color: theme.palette.getContrastText(purple[300]),
-      backgroundColor: purple[300],
-      '&:hover': {
-        backgroundColor: purple[400],
-      },
-    },
-  }))(Button);
+// const ColorButton = withStyles((Theme) => ({
+//     root: {
+//       color: theme.palette.getContrastText(purple[300]),
+//       backgroundColor: purple[300],
+//       '&:hover': {
+//         backgroundColor: purple[400],
+//       },
+//     },
+//   }))(Button);
 
 
 export default class Auth extends Component{
@@ -53,14 +52,13 @@ export default class Auth extends Component{
                 <AppBar>
                 <Box display='flex' justifyContent='center' className='appBar'>
                 <Box pt={2} pr={40} flexGrow= '1'>
-                    <img src={dailyPlanner} style={{maxHeight: '75%'}}></img>
-                        {/* <Typography>Daily Planner</Typography> */}
+                    {/* logo in img tag here */}
                         </Box>
                         <Box display='flex' flexGrow='7' alignSelf= 'center' justifySelf='center'>
                     <Box m={2} p={1} >
-                    <ColorButton variant="contained" color='primary' onClick={this.signupModalHandler}>Sign Up</ColorButton></Box>
+                    <Button variant="contained" color='primary' onClick={this.signupModalHandler}>Sign Up</Button></Box>
                     <Box m={2} p={1}>
-                    <ColorButton variant="contained" onClick={this.loginModalHandler}>Login</ColorButton></Box>
+                    <Button variant="contained" onClick={this.loginModalHandler}>Login</Button></Box>
                     </Box>
                 </Box>
                 </AppBar>
