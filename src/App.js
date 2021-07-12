@@ -1,9 +1,10 @@
 import './App.css';
-import MainFarmers from './componenets/farmers/MainFarmers'
-import HomePage from './componenets/HomePage'
-import Farms from './componenets/farmers/Farms'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import HomePage from './componenets/HomePage'
+import MainFarmers from './componenets/farmers/MainFarmers'
+import Farms from './componenets/farmers/Farms'
 import GreenFarms from './componenets/farmers/GreenFarms';
+import MainForums from './componenets/forums/MainForums'
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route exact path="/GreenFarms">
               <GreenFarms />
+            </Route>
+            <Route exact path="/MainForums">
+              <MainForums />
             </Route>
           </Switch>
         </div>

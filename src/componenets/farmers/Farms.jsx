@@ -1,5 +1,5 @@
 import { Col, Table } from "react-bootstrap"
-import Farm from "./Farm"
+import { Link } from "react-router-dom"
 
 const Farms = ({ farms }) => {
     return (
@@ -15,7 +15,7 @@ const Farms = ({ farms }) => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Green Farms</td>
+                            <td><Link to='/GreenFarms'>Green Farms</Link></td>
                             <td>Olivia Rogers</td>
                             <td>Here at green farms we specialize in farming responsibly.</td>
                         </tr>

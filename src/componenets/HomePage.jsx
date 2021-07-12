@@ -6,6 +6,8 @@ export const HomePage = () => {
         <div>
             <h1>Home Page</h1>
             <Link to="/MainFarmers">Farmers</Link>
+            <p></p>
+            <Link to="/MainForums">Forums</Link>
         </div>
     )
 }
