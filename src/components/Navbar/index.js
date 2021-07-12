@@ -7,16 +7,16 @@ import {
     NavBtn, 
     NavBtnLink
  } from './NavbarElements';
+ import logo from "./logo.png"
 
 const Navbar = () => {
     return (
         <>
             <Nav>
                 <NavLink to="/">
-                    <h1>Logo</h1>
-
-                    <img src={require('/Users/Grace/Documents/TechPoint/marketApp/src/components/Navbar/images/GTlogo.png')} 
-                    alt="logo" /> 
+                    <img src={logo}
+                    height="140" width="140"
+                    alt="logo" />  
                 </NavLink>
                 <Bars /> 
                 <NavMenu> 
@@ -36,8 +36,11 @@ const Navbar = () => {
 
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+                    <NavBtnLink to='/Login'>Login</NavBtnLink>
                 </NavBtn>
+                <NavBtn>
+                    <NavBtnLink to='Signup'>Register</NavBtnLink>
+                </NavBtn> 
             </Nav>
         </>
     )
