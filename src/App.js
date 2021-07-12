@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Home from './components/HomePage'
+import HomePage from './components/HomePage'
 import Cards from './components/Cards'
 
 
@@ -16,6 +16,7 @@ import Footer from "./components/Footer/Footer"
  
 function App() {
   return (
+<div>
     <Router>
         <Navbar /> 
         <Switch> 
@@ -26,19 +27,13 @@ function App() {
           <Route path="/markets" exact component={Markets} /> 
           <Route path="/resources" exact component={Resources} /> 
         </Switch>
-<div>
-  <Footer />
-</div>
-
     </Router>
-
-
     
-
-      
-
-    
->>>>>>> a6d263e44c2f13ceebddb184ef75434202c64c99
+  <footer>
+    <Footer />
+  </footer>
+</div>
+  
   );
 } 
 
