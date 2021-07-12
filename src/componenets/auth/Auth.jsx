@@ -6,6 +6,7 @@ import { purple } from '@material-ui/core/colors';
 
 import Login from './Login';
 import Signup from './Signup';
+import greenerTogether from '../assets/greenerLogo.PNG';
 
 // const ColorButton = withStyles((Theme) => ({
 //     root: {
@@ -51,14 +52,16 @@ export default class Auth extends Component{
             <div>
                 <AppBar>
                 <Box display='flex' justifyContent='center' className='appBar'>
-                <Box pt={2} pr={40} flexGrow= '1'>
-                    {/* logo in img tag here */}
+                    <Box justifyContent='left'>
+                        <img src={greenerTogether} style={{maxWidth: '10%'}}></img>
+                    </Box>
+                    <Box display='flex' flexGrow='7' alignSelf= 'center' justifySelf='center'>
+                        <Box m={2} p={1} >
+                        <Button variant="contained" color='primary' onClick={this.signupModalHandler}>Sign Up</Button>
                         </Box>
-                        <Box display='flex' flexGrow='7' alignSelf= 'center' justifySelf='center'>
-                    <Box m={2} p={1} >
-                    <Button variant="contained" color='primary' onClick={this.signupModalHandler}>Sign Up</Button></Box>
-                    <Box m={2} p={1}>
-                    <Button variant="contained" onClick={this.loginModalHandler}>Login</Button></Box>
+                        <Box m={2} p={1}>
+                        <Button variant="contained" onClick={this.loginModalHandler}>Login</Button>
+                        </Box>
                     </Box>
                 </Box>
                 </AppBar>
