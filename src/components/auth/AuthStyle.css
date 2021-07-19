@@ -5,8 +5,9 @@
 }
 
 #loginDiv{
-    background-color: rgb(174, 224, 189);
-    color: whitesmoke
+    padding: 2em;
+    background-color: rgb(8,148,78);
+    color: rgb(218, 221, 45)
 }
 
 .signup {
@@ -16,19 +17,7 @@
 }
 
 #signupDiv{
-    background-color: rgb(174, 224, 205);
-    color: whitesmoke
-}
-
-.appBar {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    border: 5px;
-    border-style: solid;
-    border-color: rgb(174, 224, 193);
-    height: fit-content;
-    /* border-radius: 5px; */
-    background-color: rgb(174, 224, 185);
-    /* padding: 5%; */
+    padding: 2em;
+    background-color: rgb(8,148,78);
+    color: rgb(218, 221, 45)
 }
