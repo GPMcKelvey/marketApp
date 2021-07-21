@@ -50,21 +50,21 @@ export default class Auth extends Component{
     render() {
         return(
             <div>
-                <AppBar>
+               
                 <Box display='flex' justifyContent='center' className='appBar'>
                     <Box justifyContent='left'>
                         <img src={greenerTogether} style={{maxWidth: '10%'}}></img>
                     </Box>
                     <Box display='flex' flexGrow='7' alignSelf= 'center' justifySelf='center'>
                         <Box m={2} p={1} >
-                        <Button variant="contained" color='primary' onClick={this.signupModalHandler}>Sign Up</Button>
+                        <Button variant="contained" color='primary' onClick={this.signupModalHandler}>SignUp</Button>
                         </Box>
                         <Box m={2} p={1}>
-                        <Button variant="contained" onClick={this.loginModalHandler}>Login</Button>
+                        <Button variant="contained" color='primary' onClick={this.loginModalHandler}>Login</Button>
                         </Box>
                     </Box>
                 </Box>
-                </AppBar>
+                
                 {this.state.loginModal ? <Login updateToken={this.props.updateToken} exitHandler={this.exitHandler} loginModal={this.state.loginModal} /> : null}
                 {this.state.signupModal ? <Signup updateToken={this.props.updateToken} exitHandler={this.exitHandler} signupModal={this.state.signupModal} /> : null}
             </div>

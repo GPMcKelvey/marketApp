@@ -8,6 +8,8 @@ import {
     NavBtnLink
  } from './NavbarElements';
 
+ import Auth from '../../components/auth/Auth';
+
 const Navbar = () => {
     return (
         <>
@@ -39,11 +41,12 @@ const Navbar = () => {
                         Markets
                     </NavLink>
                     {/* <NavBtnLink to='/signin'>Sign In</NavBtnLink> */}
+                    <Auth />
 
                 </NavMenu>
-                <NavBtn>
+                {/* <NavBtn>
                     <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-                </NavBtn>
+                </NavBtn> */}
             </Nav>
         </>
     )
