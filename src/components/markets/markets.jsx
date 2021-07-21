@@ -20,9 +20,11 @@ const paginationBasic = (
   </div>
 );
 
+
 const Markets = () => {
     return (
         <div>
+
 
             <div >
             <Market />
@@ -45,11 +47,14 @@ const Markets = () => {
 
 
 
+
             <Row className="g-4">
                 <CardGroup>
                     <Col>
                         <Card>
+
                             <Card.Img variant="top"  class="w-100, h-50" src="https://cdn1.visitindy.com/web/2014/6/5/Binford-Farmers-Market-1.jpg" />
+
                             <Card.Body>
                                 <Card.Title style={{marginLeft: '2rem'}}>Binford Farmer's Market</Card.Title>
                                 <Card.Text>
@@ -60,7 +65,9 @@ const Markets = () => {
                     </Col>
                     <Col>
                         <Card>
+
                             <Card.Img variant="top"  class="w-100, h-50" src="http://www.broadrippleindy.org/wp-content/uploads/2021/07/Full-Hand-vegetables-7-3-21-scaled-e1625491685855.jpg" />
+
                             <Card.Body>
                                 <Card.Title style={{marginLeft: '2rem'}}>Broad Ripple Farmer's Market</Card.Title>
                                 <Card.Text>
@@ -71,7 +78,9 @@ const Markets = () => {
                     </Col>
                     <Col>
                         <Card>
+
                             <Card.Img variant="top" class="w-100, h-50"   src="https://cdn2.visitindy.com/web/2015/12/22/farmmkt.jpg" />
+
                             <Card.Body>
                                 <Card.Title style={{marginLeft: '2rem'}}>Garfield Park Farmer's Market</Card.Title>
                                 <Card.Text>
@@ -86,7 +95,9 @@ const Markets = () => {
                 <CardGroup>
                     <Col>
                         <Card>
+
                             <Card.Img variant="top"  class="w-100, h-50" src="https://cdntaco-americantownscom.netdna-ssl.com/content-img/lexe-farmers-market-20.jpg" />
+
                             <Card.Body>
                                 <Card.Title style={{marginLeft: '2rem'}}>Irvington Farmer's Market</Card.Title>
                                 <Card.Text>
@@ -97,9 +108,11 @@ const Markets = () => {
                     </Col>
                     <Col>
                         <Card>
+
                             <Card.Img variant="top"  class="w-100, h-50" src="https://live.staticflickr.com/5323/8866708005_51238be00d_b.jpg" />
                             <Card.Body>
                                 <Card.Title style={{marginLeft: '3rem'}}>State House Market</Card.Title>
+
                                 <Card.Text>
                                 The Indiana Statehouse and Government Center Campus houses a unique farmers’ market every Thursday beginning in June and lasting through October. 
                                 </Card.Text>
@@ -108,7 +121,9 @@ const Markets = () => {
                     </Col>
                     <Col>
                         <Card>
+
                             <Card.Img variant="top"   class="w-100, h-50" src="https://cdn1.visitindy.com/web/2014/6/5/Downtown-Farmers-Market-1.jpg" />
+
                             <Card.Body>
                                 <Card.Title style={{marginLeft: '2rem'}}>The Original Farmer's Market at the Indianapolis City Market</Card.Title>
                                 <Card.Text>
