@@ -1,17 +1,22 @@
-import { Col, Row, Card } from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
-const Farm = ({ farm }) => {
+const Button = ({ color, text, onClick }) => {
     return (
-        <div className='farm'>
-            <Row>
-                <Card>
-                    <Col><h3>{farm.farmName}{' '}</h3></Col>
-                    <Col><p>{farm.description}</p></Col>
-                    <Col><p>{farm.socialMedia}</p></Col>
-                </Card>
-            </Row>
-        </div>
+        <button onClick={onClick} style={{ 
+        backgroundColor: color}} className='btn'>
+            {text}
+        </button>
     )
 }
 
-export default Farm
+Button.defaultProps = {
+    color: 'steelblue',
+}
+
+Button.propTypes = {
+    text: PropTypes.string,
+    color: PropTypes.string,
+    onClick: PropTypes.func,
+}
+
+export default Button
