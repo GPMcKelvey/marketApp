@@ -32,9 +32,9 @@ const Navbar = () => {
                     <NavLink to="/markets" activeStyle>
                         Markets
                     </NavLink>
-                    <NavLink to="/Products" activeStyle>
+                    {/* <NavLink to="/Products" activeStyle>
                         Classes
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink to="/Volunteer" activeStyle>
                        Volunteer
                     </NavLink>
