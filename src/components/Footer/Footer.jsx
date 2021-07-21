@@ -13,7 +13,7 @@ const FooterPage = () => {
             </p>
           </MDBCol>
           <MDBCol md="6">
-            <h5 className="title">Lidher INC</h5>
+            {/* <h5 className="title">Lidher INC</h5>
             <ul>
               <li className="list-unstyled">
                 <a href="#!">Link 1</a>
@@ -27,7 +27,7 @@ const FooterPage = () => {
               <li className="list-unstyled">
                 <a href="#!">Link 4</a>
               </li>
-            </ul>
+            </ul> */}
           </MDBCol>
         </MDBRow>
       </MDBContainer>
