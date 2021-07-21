@@ -32,6 +32,12 @@ const Navbar = () => {
                     <NavLink to="/markets" activeStyle>
                         Markets
                     </NavLink>
+                    <NavLink to="/Products" activeStyle>
+                        Classes
+                    </NavLink>
+                    <NavLink to="/Volunteer" activeStyle>
+                       Volunteer
+                    </NavLink>
                     {/* <NavBtnLink to='/signin'>Sign In</NavBtnLink> */}
 
                 </NavMenu>
