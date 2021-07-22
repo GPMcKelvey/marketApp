@@ -1,5 +1,5 @@
 <h1>Greener Together Excutive Summary<h1/>
-
+<br/>
 <h2>Team<h2/> 
 	<h4>Grace Edwards, Palveer Lidher, Jonathan Carey, Garrett McKelvey<h4/>
 		<br/>
